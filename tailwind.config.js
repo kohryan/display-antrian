@@ -3,8 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {  
   content: [
-      "./pages/**/*.{js,ts,jsx,tsx}",
-      "./components/**/*.{js,ts,jsx,tsx}",
+      "./src/**/*.{js,ts,jsx,tsx}",
     ],
     options: {
       safelist: [],
@@ -29,7 +28,7 @@ module.exports = {
         },
       'pink': '#ff49db',
       'orange': '#f97316',
-      'green': '#84cc16',
+      'green': '#16a34a',
       'yellow': '#ffc82c',
       'gray-dark': '#273444',
       'gray': {
