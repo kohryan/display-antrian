@@ -1,4 +1,5 @@
 import React from "react";
+import ModalTamu from "./ModalTamu"
 
   export default function Welcome() {
     return (
@@ -9,9 +10,8 @@ import React from "react";
           <div className='py-3 mt-3 mb-12 columns-1 px-2 text-center'>
           <a
             href="#"
-            className="items-center justify-center px-4 py-4 rounded-xl shadow-sm text-base font-medium text-white bg-pst hover:bg-blue hover:text-white"
             >
-            Daftar Antrian
+            <ModalTamu/>
             </a>
           </div>
 
