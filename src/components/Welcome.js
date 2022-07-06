@@ -1,5 +1,12 @@
 import React from "react";
+
+import damara from '../assets/img/damara.jpg';
+import wayan from '../assets/img/wayan.jpg';
+import ryan from '../assets/img/ryan.jpg';
+import rizal from '../assets/img/rizal.jpg';
+
 import ModalTamu from "./ModalTamu"
+
 
   export default function Welcome() {
     return (
@@ -29,7 +36,7 @@ import ModalTamu from "./ModalTamu"
                   <hr className="px-4 mb-6"></hr>
                   <div className="px-4 flex col-span-2 align-middle">
                     <img className="object-cover w-28 h-28 mr-2 rounded-full shadow"
-                         src="ryan.jpg"
+                         src={ryan}
                          alt="user"/>
                     <div className="justify-center mt-4">
                         <p className="px-4 text-5xl font-bold text-white">Ryan W. Januardi</p>
@@ -52,7 +59,7 @@ import ModalTamu from "./ModalTamu"
                   <hr className="px-4 mb-6"></hr>
                   <div className="px-4 flex col-span-2 align-middle">
                     <img className="object-cover w-28 h-28 mr-2 rounded-full shadow"
-                         src="wayan.jpg"
+                         src={wayan}
                          alt="user"/>
                     <div className="justify-center mt-4">
                         <p className="px-4 text-5xl font-bold text-white">Wayan Permana S.</p>
@@ -75,7 +82,7 @@ import ModalTamu from "./ModalTamu"
                   <hr className="px-4 mb-6"></hr>
                   <div className="px-4 flex col-span-2 align-middle">
                     <img className="object-cover w-28 h-28 mr-2 rounded-full shadow"
-                         src="damara.jpg"
+                         src={damara}
                          alt="user"/>
                     <div className="justify-center mt-4">
                         <p className="px-4 text-5xl font-bold text-white">Damara Utama</p>
@@ -98,7 +105,7 @@ import ModalTamu from "./ModalTamu"
                   <hr className="px-4 mb-6"></hr>
                   <div className="px-4 flex col-span-2 align-middle">
                     <img className="object-cover w-28 h-28 mr-2 rounded-full shadow"
-                         src="rizal.jpg"
+                         src={rizal}
                          alt="user"/>
                     <div className="justify-center mt-4">
                         <p className="px-4 text-5xl font-bold text-white">Rizal Karim</p>

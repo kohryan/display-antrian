@@ -4,6 +4,7 @@ import { Popover, Transition } from '@headlessui/react'
 import {
   CogIcon,
 } from '@heroicons/react/outline'
+import logo from "../assets/img/pst1.png"
 
 export default function Navbar() {
   return (
@@ -14,7 +15,7 @@ export default function Navbar() {
           <div className="flex flex-col-2 justify-start lg:w-0 lg:flex-1">
             <a href="/">
               <img className="h-16 w-auto sm:h-16"
-                src="/pst1.png"
+                src={logo}
                 alt="logo"
               />
             </a>
