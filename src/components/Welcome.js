@@ -1,8 +1,12 @@
 import React from "react";
+
 import damara from '../assets/img/damara.jpg';
 import wayan from '../assets/img/wayan.jpg';
 import ryan from '../assets/img/ryan.jpg';
 import rizal from '../assets/img/rizal.jpg';
+
+import ModalTamu from "./ModalTamu"
+
 
   export default function Welcome() {
     return (
@@ -13,9 +17,8 @@ import rizal from '../assets/img/rizal.jpg';
           <div className='py-3 mt-3 mb-12 columns-1 px-2 text-center'>
           <a
             href="#"
-            className="items-center justify-center px-4 py-4 rounded-xl shadow-sm text-base font-medium text-white bg-pst hover:bg-blue hover:text-white"
             >
-            Daftar Antrian
+            <ModalTamu/>
             </a>
           </div>
 

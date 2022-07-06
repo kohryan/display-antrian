@@ -8,11 +8,11 @@ export default function Modal() {
   return (
     <>
       <button
-        className="w-full flex items-center justify-center px-4 py-2 shadow-sm text-base font-medium text-smart bg-yellow hover:bg-white hover:text-smart ease-linear transition-all duration-150"
+        className="items-center justify-center px-4 py-4 rounded-xl shadow-sm text-md font-bold text-white bg-pst hover:bg-blue hover:text-white ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >
-        Admin
+        Daftar Antrian
       </button>
       {showModal ? (
         <>
@@ -23,9 +23,9 @@ export default function Modal() {
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-smart rounded-t">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-gray-400 rounded-t">
                   <h3 className="text-xl font-bold text-smart">
-                    Daftar Kelas
+                    Daftar Antrian
                   </h3>
                   <button
                     className="p-1 ml-auto bg-smartred border-0 text-black rounded-md hover:bg-smart float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -34,28 +34,52 @@ export default function Modal() {
                     <XIcon className="text-white h-6 w-6" aria-hidden="true" />
                   </button>
                 </div>
-                {/*body*/}
+                {/*input nama*/}
                 <div className="relative p-6 flex-auto">
-                  <p className="my-4 text-black font-regular text-md leading-relaxed">
-                    Belum ada kelas yang dibuka. Follow <a className="font-semibold text-smartred" href="https://instagram.com/bpsprovsultra">instagram BPS Provinsi Sulawesi Tenggara (@bpsprovsultra)</a> untuk mendapat info terkini terkait Smart Sharing BPS Provinsi Sulawesi Tenggara
-                  </p>
+                  <form>
+                    <div className="relative w-full mt-3 mb-3">
+                      <input
+                      type="text"
+                      className="border px-3 py-3 placeholder-gray-400 text-gray-900 bg-white rounded-lg text-sm shadow border-gray-900 focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      placeholder="Nama Lengkap"
+                      />
+                    </div>
+                  </form>
                 </div>
-                {/*footer*/}
+                {/*pilih layanan*/}
+                <div className="items-center text-left px-6 rounded-b">
+                  <p>Pilih Layanan:</p>
+                </div>
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button
-                    className="text-white bg-smartred font-bold px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="text-white bg-indigo-700 font-bold px-6 py-2 text-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    Tutup
+                    Perpustakaan Cetak/Digital
                   </button>
                   <button
-                    className="bg-smart text-white active:bg-emerald-600 font-bold text-sm px-6 py-2 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="text-white bg-green font-bold px-6 py-2 text-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    Daftar (Belum Tersedia)
+                    Konsultasi Statistik
                   </button>
+                  <button
+                    className="text-white bg-red font-bold px-6 py-2 text-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                  >
+                    Rekomendasi Statistik
+                  </button>
+                  <button
+                    className="text-white bg-orange font-bold px-6 py-2 text-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                  >
+                    Penjualan Produk Statistik
+                  </button>
+
                 </div>
               </div>
             </div>
